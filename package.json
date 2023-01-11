@@ -1,0 +1,32 @@
+{
+  "name": "text-auto-corrector",
+  "version": "2.1.0",
+  "description": "TextAutoCorrector is a npm package that performs safe cleaning of text. Examples of safe cleaning include capitalizing the beginning of sentences, spellchecking mispelled words, changing SMS-speak to full words, fixed stretched words (ie. 'borrreedd'), removing lexical illusions (ie. multiple 'the the dog') and combining words that are mistaken separated (ie. 'her self' to 'herself').",
+  "keywords": [
+    "spelling",
+    "spellcheck",
+    "grammar",
+    "punctuation",
+    "proofread",
+    "clean-text",
+    "clean-sentences"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "esbuild ./src/index.js --outfile=./dist/index.js --format=esm --platform=browser --bundle",
+    "test": "jest --coverage --testPathPattern=./test"
+  },
+  "homepage": "https://github.com/emranio/text-auto-corrector",
+  "author": "emranio",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-preset-minify": "^0.5.2",
+    "jest": "^28.1.3",
+    "esbuild": "^0.16.16"
+  },
+  "dependencies": {
+  }
+}
